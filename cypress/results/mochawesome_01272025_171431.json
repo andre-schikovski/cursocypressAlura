@@ -1,0 +1,300 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-27T20:14:22.554Z",
+    "end": "2025-01-27T20:14:31.981Z",
+    "duration": 9427,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6ca8daf1-47c5-403b-8483-a368ff48a1cf",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Aula2_Exercicios.cy.js",
+      "file": "cypress\\e2e\\Aula2_Exercicios.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4e7821c6-f129-4f14-956a-e06a032a4158",
+          "title": "Cadastro de usuários - Fluxos alternativos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastro de usuário - Dados em branco",
+              "fullTitle": "Cadastro de usuários - Fluxos alternativos Cadastro de usuário - Dados em branco",
+              "timedOut": null,
+              "duration": 2032,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#email').type('john.doe@email.com');\ncy.get('#pass').type('Bella123456');\ncy.get('button').click();",
+              "err": {},
+              "uuid": "4945e750-f03e-4d32-bc0a-d550723300e3",
+              "parentUUID": "4e7821c6-f129-4f14-956a-e06a032a4158",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4945e750-f03e-4d32-bc0a-d550723300e3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2032,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fec046c0-2a6f-408f-b458-f94e52845927",
+          "title": "Acesso a página principal",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar texto do título",
+              "fullTitle": "Acesso a página principal Validar texto do título",
+              "timedOut": null,
+              "duration": 124,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'AdoPet');",
+              "err": {},
+              "uuid": "4c17a6b0-7798-4279-b1c9-522c5dd94f7a",
+              "parentUUID": "fec046c0-2a6f-408f-b458-f94e52845927",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4c17a6b0-7798-4279-b1c9-522c5dd94f7a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 124,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5105616a-7947-4628-8d14-335444d5c682",
+          "title": "Teste quem ama adota",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica mensagem de texto",
+              "fullTitle": "Teste quem ama adota Verifica mensagem de texto",
+              "timedOut": null,
+              "duration": 440,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('p', 'Quem ama adota!').should('be.visible');",
+              "err": {},
+              "uuid": "67d3162b-7d7b-4f2a-88f9-c9eb0a8a9cfb",
+              "parentUUID": "5105616a-7947-4628-8d14-335444d5c682",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de texto",
+              "fullTitle": "Teste quem ama adota Verifica mensagem de texto",
+              "timedOut": null,
+              "duration": 549,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('p', 'Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!').should('be.visible');",
+              "err": {},
+              "uuid": "ad4b8824-a155-4e14-899e-f1836a9d129e",
+              "parentUUID": "5105616a-7947-4628-8d14-335444d5c682",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "67d3162b-7d7b-4f2a-88f9-c9eb0a8a9cfb",
+            "ad4b8824-a155-4e14-899e-f1836a9d129e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 989,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "57f5a478-e993-4488-bea1-6e3fb6ce4cbf",
+          "title": "Teste quem ama adota",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica mensagem de texto",
+              "fullTitle": "Teste quem ama adota Verifica mensagem de texto",
+              "timedOut": null,
+              "duration": 203,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('p', 'Quem ama adota!').should('be.visible');",
+              "err": {},
+              "uuid": "ddffa937-e370-4783-b9c4-f43aa96dbc27",
+              "parentUUID": "57f5a478-e993-4488-bea1-6e3fb6ce4cbf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de texto",
+              "fullTitle": "Teste quem ama adota Verifica mensagem de texto",
+              "timedOut": null,
+              "duration": 211,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('p', 'Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!').should('be.visible');",
+              "err": {},
+              "uuid": "2446fea9-82f3-409a-aab9-85b53f249b44",
+              "parentUUID": "57f5a478-e993-4488-bea1-6e3fb6ce4cbf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ddffa937-e370-4783-b9c4-f43aa96dbc27",
+            "2446fea9-82f3-409a-aab9-85b53f249b44"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 414,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "64e2d663-81ef-4d73-999a-a699de544a08",
+          "title": "Fluxo de Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica mensagem de texto",
+              "fullTitle": "Fluxo de Login Verifica mensagem de texto",
+              "timedOut": null,
+              "duration": 1507,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.header__message').click();\ncy.get('[data-test=\"input-loginEmail\"]').type('ana@email.com');\ncy.get('[data-test=\"input-loginPassword\"]').type('Senha123');\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "f34d3407-3c5e-49cc-99fb-18625d1e6839",
+              "parentUUID": "64e2d663-81ef-4d73-999a-a699de544a08",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f34d3407-3c5e-49cc-99fb-18625d1e6839"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1507,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "true",
+        "json": "true",
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

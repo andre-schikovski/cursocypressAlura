@@ -1,0 +1,243 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-28T13:06:21.673Z",
+    "end": "2025-01-28T13:06:32.405Z",
+    "duration": 10732,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2fa089f7-9d1a-4465-a56b-110f507c5535",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Aula2.cy.js",
+      "file": "cypress\\e2e\\Aula2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "997298a9-d5d0-4990-a76e-2c923b311cc0",
+          "title": "Cadastro de usuários",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastro de usuário utilizando fluxo de caminho feliz",
+              "fullTitle": "Cadastro de usuários Cadastro de usuário utilizando fluxo de caminho feliz",
+              "timedOut": null,
+              "duration": 2043,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-tau.vercel.app/cadastro');\ncy.get('#name').type('John Doe');\ncy.get('#email').type('john.doe@email.com');\ncy.get('#pass-create').type('Bella123456');\ncy.get('#pass-confirm').type('Bella123456');\ncy.get('button').click();",
+              "err": {},
+              "uuid": "5d1bd9e0-3b76-494f-bc5b-9feb66d431f2",
+              "parentUUID": "997298a9-d5d0-4990-a76e-2c923b311cc0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5d1bd9e0-3b76-494f-bc5b-9feb66d431f2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2043,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "662decaa-73af-4218-a027-1ece68534ec2",
+          "title": "Cadastro de usuários - Fluxos alternativos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastro de usuário - Dados em branco",
+              "fullTitle": "Cadastro de usuários - Fluxos alternativos Cadastro de usuário - Dados em branco",
+              "timedOut": null,
+              "duration": 1076,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#email').type('john.doe@email.com');\ncy.get('#pass').type('Bella123456');\ncy.get('button').click();",
+              "err": {},
+              "uuid": "44241ac9-8667-4113-a589-c09bb5459d78",
+              "parentUUID": "662decaa-73af-4218-a027-1ece68534ec2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "cfe6e12c-5a04-4a0d-a2a8-c6ba81f4310d",
+              "title": "Cadastro de usuários - Fluxos alternativos",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Cadastro de usuário - Dados em branco",
+                  "fullTitle": "Cadastro de usuários - Fluxos alternativos Cadastro de usuários - Fluxos alternativos Cadastro de usuário - Dados em branco",
+                  "timedOut": null,
+                  "duration": 1776,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('#email').type('john.doe@email.com');\ncy.get('#pass').type('Bella123456');\ncy.get('button').click();",
+                  "err": {},
+                  "uuid": "9d8abbc7-6293-4701-8b8b-b2cd28d6d317",
+                  "parentUUID": "cfe6e12c-5a04-4a0d-a2a8-c6ba81f4310d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "9d8abbc7-6293-4701-8b8b-b2cd28d6d317"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1776,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7d94c693-c49d-4885-aa46-1dc8b5018d80",
+              "title": "Login - Fluxos alternativos",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Login -Email formato inválido",
+                  "fullTitle": "Cadastro de usuários - Fluxos alternativos Login - Fluxos alternativos Login -Email formato inválido",
+                  "timedOut": null,
+                  "duration": 2417,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('#email').type('john.com');\ncy.get('#pass').type('Bella123456');\ncy.get('button').click();\ncy.contains('Por favor, verifique o email digitado').should('be.visible');",
+                  "err": {},
+                  "uuid": "2a81141c-c00c-4fde-9157-b6a69e63c57d",
+                  "parentUUID": "7d94c693-c49d-4885-aa46-1dc8b5018d80",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Login - Senha Inválida",
+                  "fullTitle": "Cadastro de usuários - Fluxos alternativos Login - Fluxos alternativos Login - Senha Inválida",
+                  "timedOut": null,
+                  "duration": 1969,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('#email').type('john@email.com');\ncy.get('#pass').type('123456');\ncy.get('button').click();\ncy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');",
+                  "err": {},
+                  "uuid": "d6eed3d2-ecd7-4254-b6ee-6926a6eb334e",
+                  "parentUUID": "7d94c693-c49d-4885-aa46-1dc8b5018d80",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2a81141c-c00c-4fde-9157-b6a69e63c57d",
+                "d6eed3d2-ecd7-4254-b6ee-6926a6eb334e"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 4386,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "44241ac9-8667-4113-a589-c09bb5459d78"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1076,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "true",
+        "json": "true",
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
